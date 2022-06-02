@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <div th:replace="header.html ::header"> </div>
+    <!-- th :  문법 : 타임리프 문법 -->
+    <!-- 해당 파일의 플러그 불러오기 -->
+    <!-- th:replace="파일명.html ::플러그이름"-->
+
+    <h3> 인텔리제이 인텔리쪠이 인텔리 쪠이이이이이이이이</h3>
+    <div> 인텔리제이 커뮤니티(무료) : html 제공 </div>
+    <div> 인텔리제이 커뮤니티(무료) : js.css 제공  X </div>
+    <div> 인텔리제이 커뮤니티(무료) : 자동완성을 제공하지 않는 언어들은 자동완성 프로그램 설치 = tabnine  </div>
+        <p> plugins </p>
+    <div> html 에 html 포함 [jsp= <@%include= @></div>
+        <p> 타임리프 이용한 다른 html 가져오기 [ 플러그 사용 ] </p>
+    <div> java에서 넘어온 데이터 호출 [th:text="${모델명}"]</div>
+
+    <div th:text="${data}"></div>
+
+    <div> ajax를 이용한 java에서 통신한 데이터 호출</div>
+    <div id="divbox"> </div>
+
+
+    <div th:replace="footer.html :: footer"> </div>
+
+</body>
+</html>
