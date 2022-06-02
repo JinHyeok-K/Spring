@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller // @Controller : 컨트롤 어노테이션 [MVC 중에 C에 해당하는 클래스 데이터 주입 ]
 public class Index {
 
+
     // @WebServlet("/") 과 유사 <-------> @GetMapping("/")
     @GetMapping("/")        // @GetMapping : URL 맵핑 어노테이션 [클라이언트가 요청한 URL 과 연결]
     public String index(Model model) { // main 문자열 반환하는 메소드  // 해당 메소드는 URL과 맵핑되면 실행되는 메소드
